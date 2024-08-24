@@ -1,0 +1,56 @@
+.hero {
+    max-width: 62%;
+    z-index: 10;
+}
+
+.player-container iframe {
+    border-radius: 10px;
+}
+
+.parallax-front,
+.parallax-back {
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    image-rendering: pixelated;
+}
+
+.parallax-front {
+    animation: loop 050000s linear infinite;
+    filter: alpha(opacity=50);
+}
+
+.parallax-back {
+    animation: loop 300000s linear infinite;
+}
+
+@keyframes loop {
+    from {
+    background-position: 0 100%;
+    }
+    /*use negative width if you want it to flow right to left else and positive for left to right*/
+    to {
+    background-position: -5000000px 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hero {
+    max-width: 68%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .hero {
+    max-width: 75%;
+    }
+
+    .metadata-card {
+    display: none;
+    }
+
+.player-container {
+    width: 100%;
+    margin: auto;
+    height: 450px;
+    }
+}

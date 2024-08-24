@@ -1,0 +1,22 @@
+.requirement {
+    background: #232a36;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.entry {
+    padding: 10px;
+}
+
+.avatar {
+    display: inline-grid;
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    text-transform: uppercase;
+    place-items: center;
+}

@@ -1,0 +1,10 @@
+@keyframes bg-move-loop {
+    from {
+    background-position: 0 0;
+    }
+
+    /*use negative width if you want it to flow right to left else and positive for left to right*/
+    to {
+    background-position: -1000000px 1000000px;
+    }
+}
